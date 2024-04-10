@@ -16,7 +16,8 @@
 </head>
 
 <!-- BODY ALTO 100VH -->
-<body> 
+
+<body>
 
     <!-- NAVBAR ALTO 6% -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary my_h_6 p-0 flex-nowrap">
@@ -54,11 +55,11 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fa-solid fa-bell"></i>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
@@ -73,8 +74,8 @@
     <!-- CORPO PAGINA ALTO 94% -->
     <main class="my_h_94">
         <div class="row g-0 h-100 w-100">
-            <!-- SIDEBAR LARGO AUTOMATICO-->
-            <div class="col-auto my_bkg_color_sidebar d-flex flex-column justify-content-between">
+            <!-- SIDEBAR-->
+            <div class="col-1 my_bg_color_sidebar d-flex flex-column justify-content-between">
                 <div class="my_sydebar_t p-4">
                     <div class="my_sidebar_item mb-2">
                         <i class="fa-solid fa-house me-2"></i>Home
@@ -96,8 +97,60 @@
             </div>
 
             <!-- CONTENUTO -->
-            <div class="col-auto">
+            <div class="col-11">
+                <header class="w-100 bg-primary p-3">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <div class="m-1">
+                                <h2 class="d-inline">Boolean</h2>
+                                <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
+                            </div>
+                            <div>
+                                <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
+                                <i class="fa-solid fa-angles-right"></i>
+                                <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
+                                <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
+                                <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <p>Studenti online negli ultimi 30 minuti</p>
+                            <h2 class="m-0">125</h2>
+                        </div>
+                        <div class="col-auto me-5">
+                            Nuovo Studente
+                            <button class="btn my_offcanvas_btn ms-2" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
 
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                        Inserisci un nuovo studente
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <div class="offcanvas-body">
+                                    <div>
+                                        Some text as placeholder. In real life you can have the elements you have
+                                        chosen. Like, text, images,
+                                        lists, etc.als
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </header>
+                <section class="w-100">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6"></div>
+                        <div class="col-lg-4 col-md-6"></div>
+                    </div>
+                </section>
 
             </div>
 

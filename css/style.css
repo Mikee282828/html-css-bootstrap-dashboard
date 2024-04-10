@@ -19,7 +19,20 @@ body{
 .my_sidebar_item>i{
     width:1rem;
 }
-.my_bkg_color_sidebar{
+.my_bg_color_sidebar{
     background-color: rgb(5, 30, 52);
     color:white;
+}
+.my_bg_primary{
+    background-color: rgb(27, 114, 232);
+}
+header{
+    color: white;
+}
+.my_offcanvas_btn{
+    border:1px white solid;
+    color:white;
+}
+.dropdown .fa-bell{
+    color:rgb(255, 143, 0)
 }
