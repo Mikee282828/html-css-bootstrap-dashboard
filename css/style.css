@@ -3,14 +3,20 @@
 }
 @media screen and (min-width:1200px){
     .my_nav_item_hidden{
-        display:block;
+        display:inline-block;
     }
 }
 .my_h_6{
-    height:6%;
+    height:6vh;
 }
 .my_h_94{
-    height:94%;
+    height:94vh;
+}
+.my_h_header{
+    height:120px;
+}
+.my_h_section{
+    height:calc(100% - 120px);
 }
 body{
     height:100vh;
@@ -22,6 +28,7 @@ body{
 .my_bg_color_sidebar{
     background-color: rgb(5, 30, 52);
     color:white;
+    background-image: url("../img/sidebar-bg.png");
 }
 .my_bg_primary{
     background-color: rgb(27, 114, 232);
@@ -35,4 +42,16 @@ header{
 }
 .dropdown .fa-bell{
     color:rgb(255, 143, 0)
+}
+td>i{
+    border:solid 1px grey;
+    color:grey;
+    padding:.5rem;
+    border-radius:.3rem;
+}
+.my_table td:nth-child(n+2){
+    text-align: center;
+}
+.my_text_bg_process{
+    background-color: rgb(255, 193, 7);
 }
