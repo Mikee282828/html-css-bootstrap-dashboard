@@ -17,9 +17,6 @@ body{
     height:100vh;
     width:100%;
 }
-.my_sidebar_item>i{
-    width:1rem;
-}
 .my_bg_color_sidebar{
     background-color: rgb(5, 30, 52);
     color:white;
@@ -56,6 +53,15 @@ td>i{
 .my_offcanvas_width.offcanvas{
     width:100%;
 }
+.my_sidebar_item{
+    padding:0.5rem;
+    text-align: center;
+    width: 100%;
+}
+.my_sidebar_item:hover{
+    background-color: rgba(255, 255, 255, 0.357);
+    cursor: pointer;
+}
 @media screen and (min-width:768px){
     
     .my_h_header{
@@ -67,10 +73,13 @@ td>i{
 }
 @media screen and (min-width:1200px){
     .my_sidebar_max_width{
-        max-width:200px;
+        max-width:150px;
+    }
+    .my_sidebar_item{
+        text-align: start;
     }
     .my_content_max_width{
-        width:calc(100% - 200px);
+        width:calc(100% - 150px);
     }
     .my_xl_item_show{
         display:inline-block;
