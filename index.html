@@ -19,8 +19,8 @@
 
 <body>
 
-    <!-- NAVBAR ALTO 6vh -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary my_h_6 p-0 flex-nowrap">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my_h_navbar p-0 flex-nowrap">
         <div class="container-fluid">
 
             <a class="navbar-brand w-auto" href="#">
@@ -36,19 +36,19 @@
 
                 <ul class="navbar-nav">
 
-                    <li class="nav-item my_nav_item_hidden">
+                    <li class="nav-item my_xl_item_show">
                         <a class="nav-link active" aria-current="page" href="#">
                             <i class="fa-solid fa-list"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item my_nav_item_hidden">
+                    <li class="nav-item my_xl_item_show">
                         <a class="nav-link" href="#">
                             <i class="fa-regular fa-circle-question"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item my_nav_item_hidden">
+                    <li class="nav-item my_xl_item_show">
                         <a class="nav-link" href="#">
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </a>
@@ -56,9 +56,9 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fa-bell ms-2"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
+                        <ul class="dropdown-menu dropdown-menu-end position-absolute">
                             <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
@@ -70,66 +70,45 @@
         </div>
     </nav>
 
-    <!-- CORPO PAGINA ALTO 94vh -->
-    <main class="row g-0 w-100 my_h_94">
+    <!-- CORPO PAGINA -->
+    <main class="row g-0 w-100 my_h_main">
         <!-- SIDEBAR-->
-        <div class="col-1 my_bg_color_sidebar d-flex flex-column justify-content-between h-100">
-            <div class="my_sydebar_t p-4">
+        <div class="col-2 col-md-1 col-xl-2 my_sidebar_max_width my_bg_color_sidebar d-flex flex-column justify-content-between h-100">
+            <div class="my_sydebar_t p-3 d-flex flex-column align-items-center align-items-xl-start">
                 <div class="my_sidebar_item mb-2">
-                    <i class="fa-solid fa-house me-2"></i> Home
+                    <i class="fa-solid fa-house me-2"></i>  <span class="my_xl_item_show">Home</span>
                 </div>
                 <div class="my_sidebar_item mb-2">
-                    <i class="fa-solid fa-chart-simple me-2"></i>Stats
+                    <i class="fa-solid fa-chart-simple me-2"></i> <span class="my_xl_item_show">Stats</span>
                 </div>
                 <div class="my_sidebar_item mb-2">
-                    <i class="fa-solid fa-signal me-2"></i>Signals
+                    <i class="fa-solid fa-signal me-2"></i> <span class="my_xl_item_show">Signals</span>
                 </div>
             </div>
 
-            <div class="my_sidebar_b p-3 mb-2">
+            <div class="my_sidebar_b p-3 mb-2 d-flex flex-column align-items-center align-items-xl-start">
                 <div class="my_sidebar_item">
-                    <i class="fa-solid fa-gear me-2"></i> Admin
+                    <i class="fa-solid fa-gear me-2"></i>  <span class="my_xl_item_show">Admin</span>
                 </div>
             </div>
 
         </div>
 
         <!-- CONTENUTO -->
-        <div class="col-11 h-100">
+        <div class="col-10 col-md-11 col-xl-10 h-100 my_content_max_width">
 
             <!-- header -->
             <header class="w-100 bg-primary p-3 my_h_header">
                 <div class="row justify-content-between">
-                    <!-- BOOLEAN -->
-                    <div class="col-auto">
-                        <div class="m-1">
-                            <h2 class="d-inline">Boolean</h2>
-                            <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
-                        </div>
-                        <div>
-                            <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
-                            <i class="fa-solid fa-angles-right"></i>
-                            <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
-                            <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
-                            <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
-                        </div>
-                    </div>
-
-                    <!-- #STUDENTI -->
-                    <div class="col-auto">
-                        <p>Studenti online negli ultimi 30 minuti</p>
-                        <h2 class="m-0">125</h2>
-                    </div>
-
                     <!-- OFFCANVAS -->
-                    <div class="col-auto me-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-3 order-md-2 ">
                         Nuovo Studente
                         <button class="btn my_offcanvas_btn ms-2" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             <i class="fa-solid fa-plus"></i>
                         </button>
 
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                        <div class="offcanvas offcanvas-end my_offcanvas_width" tabindex="-1" id="offcanvasExample"
                             aria-labelledby="offcanvasExampleLabel">
 
                             <div class="offcanvas-header">
@@ -142,13 +121,51 @@
 
                             <div class="offcanvas-body">
                                 <div>
-                                    Some text as placeholder. In real life you can have the elements you have
-                                    chosen. Like, text, images,
-                                    lists, etc.als
+                                    <form>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" aria-label="name">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" aria-label="surname">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                            <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="submit" class="btn btn-warning">Svuota</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- BOOLEAN -->
+                    <div class="col-12 col-md-4 col-xl-5 mb-3 order-md-0">
+                        <h2 class="d-inline mb-3">Boolean</h2>
+                        <span class="badge rounded-pill my_text_bg_secondary">Piano blaze</span>
+                        <div>
+                            <span class="badge rounded-pill my_text_bg_secondary">Piano blaze</span>
+                            <i class="fa-solid fa-angles-right"></i>
+                            <span class=" my_xl_item_show">
+                                <span class="badge rounded-pill my_text_bg_secondary">Piano blaze</span>
+                                <span class="badge rounded-pill my_text_bg_secondary">Piano blaze</span>
+                                <span class="badge rounded-pill my_text_bg_secondary">Piano blaze</span>
+                            </span>
+                            <span class="my_xl_item_hidden badge rounded-pill my_text_bg_secondary">+</span>
+                        </div>
+                    </div>
+
+                    <!-- #STUDENTI -->
+                    <div class="col-12 col-md-4 mb-3 order-md-1">
+                        <p class="mb-3">Studenti online negli ultimi 30 minuti</p>
+                        <h2 class="m-0">125</h2>
+                    </div>
+
+                    
                 </div>
             </header>
 
@@ -157,7 +174,7 @@
                 <div class="row pt-3 p-2 g-0">
 
                     <!-- COLONNA SX -->
-                    <div class="col-lg-9 col-md-6 pe-3">
+                    <div class="col-xl-9 col-md-6 pe-3">
                         <div class="card mb-3">
                             <div class="card-header">
                                 <h3>Prossime classi</h3>
@@ -424,7 +441,7 @@
                     </div>
 
                     <!-- COLONNA DX -->
-                    <div class="col-lg-3 col-md-6 ">
+                    <div class="col-xl-3 col-md-6 ">
 
                         <div class="card mb-3">
                             <div class="card-header">

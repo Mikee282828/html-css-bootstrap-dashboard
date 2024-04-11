@@ -1,22 +1,17 @@
-.my_nav_item_hidden{
+.my_xl_item_show{
     display:none;
 }
-@media screen and (min-width:1200px){
-    .my_nav_item_hidden{
-        display:inline-block;
-    }
+.my_h_navbar{
+    height:80px;
 }
-.my_h_6{
-    height:6vh;
-}
-.my_h_94{
-    height:94vh;
+.my_h_main{
+    height:calc(100% - 80px);
 }
 .my_h_header{
-    height:120px;
+    height:230px;
 }
 .my_h_section{
-    height:calc(100% - 120px);
+    height:calc(100% - 230px);
 }
 body{
     height:100vh;
@@ -32,6 +27,9 @@ body{
 }
 .my_bg_primary{
     background-color: rgb(27, 114, 232);
+}
+.my_text_bg_secondary{
+    background-color: rgba(0, 0, 0, 0.292);
 }
 header{
     color: white;
@@ -54,4 +52,34 @@ td>i{
 }
 .my_text_bg_process{
     background-color: rgb(255, 193, 7);
+}
+.my_offcanvas_width.offcanvas{
+    width:100%;
+}
+@media screen and (min-width:768px){
+    
+    .my_h_header{
+        height:150px;
+    }
+    .my_h_section{
+        height:calc(100% - 150px);
+    }
+}
+@media screen and (min-width:1200px){
+    .my_sidebar_max_width{
+        max-width:200px;
+    }
+    .my_content_max_width{
+        width:calc(100% - 200px);
+    }
+    .my_xl_item_show{
+        display:inline-block;
+    }
+    .my_xl_item_hidden{
+        display: none;
+    }
+    .my_offcanvas_width.offcanvas{
+        width:60%;
+    }
+    
 }
